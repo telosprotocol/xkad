@@ -1,0 +1,58 @@
+// protoc -I. --cpp_out=. node.proto
+
+syntax = "proto2";
+package top.kadmlia.test.pb;
+
+
+message AllNodes {
+    message Node {
+        required string local_ip = 1;
+        required int32 local_port = 2;
+        required string public_ip = 3;
+        required int32 public_port = 4;
+        required uint64 service_type = 5;
+        required int32 nat_type = 6;
+        // required string xid = 7;
+        // required uint64 hash64 = 8;
+        // required string xip = 9;
+        required bytes node_id = 10;
+    };
+
+    repeated Node nodes = 1;
+};
+
+message TestReportNodes {
+    required int32 nodes_size = 1;
+}
+
+
+message TestConnRequest {
+    required int64 tp1 = 1;
+
+    required string src_ip = 10;
+    required int32 src_port = 11;
+}
+
+message TestConnResponse {
+    required int64 tp1 = 1;
+    required int64 hops1 = 2;
+
+    required string src_ip = 10;
+    required int32 src_port = 11;
+}
+
+
+message TestConn2Request {
+    required int64 tp1 = 1;
+
+    required bool send_or_relay = 10;  // true: send, false: relay
+    required string src_ip = 11;
+    required int32 src_port = 12;
+}
+
+message TestConn2Response {
+    required int64 tp1 = 1;
+    required int64 hops1 = 2;
+
+    required bool send_or_relay = 10;
+}

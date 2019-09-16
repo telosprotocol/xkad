@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99FA799722B2736F00B5D6BE /* rumor_def.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796322B2736F00B5D6BE /* rumor_def.h */; };
+		99FA799822B2736F00B5D6BE /* rumor_filter.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796422B2736F00B5D6BE /* rumor_filter.h */; };
+		99FA799922B2736F00B5D6BE /* rumor_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796522B2736F00B5D6BE /* rumor_handler.h */; };
+		99FA799A22B2736F00B5D6BE /* rumor_message_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796622B2736F00B5D6BE /* rumor_message_manager.h */; };
+		99FA799B22B2736F00B5D6BE /* nat_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796822B2736F00B5D6BE /* nat_defines.h */; };
+		99FA799C22B2736F00B5D6BE /* nat_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796A22B2736F00B5D6BE /* nat_defines.h */; };
+		99FA799D22B2736F00B5D6BE /* nat_handshake_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796B22B2736F00B5D6BE /* nat_handshake_manager.h */; };
+		99FA799E22B2736F00B5D6BE /* nat_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796C22B2736F00B5D6BE /* nat_log.h */; };
+		99FA799F22B2736F00B5D6BE /* nat_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796D22B2736F00B5D6BE /* nat_manager.h */; };
+		99FA79A022B2736F00B5D6BE /* kadmlia.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA796F22B2736F00B5D6BE /* kadmlia.pb.h */; };
+		99FA79A122B2736F00B5D6BE /* ledger.pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797122B2736F00B5D6BE /* ledger.pb.h */; };
+		99FA79A222B2736F00B5D6BE /* bootstrap_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797422B2736F00B5D6BE /* bootstrap_cache.h */; };
+		99FA79A322B2736F00B5D6BE /* bootstrap_cache_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797522B2736F00B5D6BE /* bootstrap_cache_helper.h */; };
+		99FA79A422B2736F00B5D6BE /* callback_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797622B2736F00B5D6BE /* callback_manager.h */; };
+		99FA79A522B2736F00B5D6BE /* client_node_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797722B2736F00B5D6BE /* client_node_manager.h */; };
+		99FA79A622B2736F00B5D6BE /* dynamic_xip_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797822B2736F00B5D6BE /* dynamic_xip_manager.h */; };
+		99FA79A722B2736F00B5D6BE /* heartbeat_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797922B2736F00B5D6BE /* heartbeat_state.h */; };
+		99FA79A822B2736F00B5D6BE /* kad_message_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797A22B2736F00B5D6BE /* kad_message_handler.h */; };
+		99FA79A922B2736F00B5D6BE /* local_node_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797B22B2736F00B5D6BE /* local_node_info.h */; };
+		99FA79AA22B2736F00B5D6BE /* nat_detect_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797C22B2736F00B5D6BE /* nat_detect_manager.h */; };
+		99FA79AB22B2736F00B5D6BE /* node_detection_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797D22B2736F00B5D6BE /* node_detection_manager.h */; };
+		99FA79AC22B2736F00B5D6BE /* node_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797E22B2736F00B5D6BE /* node_info.h */; };
+		99FA79AD22B2736F00B5D6BE /* nodeid_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA797F22B2736F00B5D6BE /* nodeid_utils.h */; };
+		99FA79AE22B2736F00B5D6BE /* routing_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA798022B2736F00B5D6BE /* routing_table.h */; };
+		99FA79AF22B2736F00B5D6BE /* routing_table_heartbeat.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA798122B2736F00B5D6BE /* routing_table_heartbeat.h */; };
+		99FA79B022B2736F00B5D6BE /* routing_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FA798222B2736F00B5D6BE /* routing_utils.h */; };
+		99FA79B122B2736F00B5D6BE /* bootstrap_cache.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798422B2736F00B5D6BE /* bootstrap_cache.cc */; };
+		99FA79B222B2736F00B5D6BE /* bootstrap_cache_helper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798522B2736F00B5D6BE /* bootstrap_cache_helper.cc */; };
+		99FA79B322B2736F00B5D6BE /* callback_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798622B2736F00B5D6BE /* callback_manager.cc */; };
+		99FA79B422B2736F00B5D6BE /* client_node_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798722B2736F00B5D6BE /* client_node_manager.cc */; };
+		99FA79B522B2736F00B5D6BE /* dynamic_xip_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798822B2736F00B5D6BE /* dynamic_xip_manager.cc */; };
+		99FA79B622B2736F00B5D6BE /* heartbeat_state.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798922B2736F00B5D6BE /* heartbeat_state.cc */; };
+		99FA79B722B2736F00B5D6BE /* kad_message_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798A22B2736F00B5D6BE /* kad_message_handler.cc */; };
+		99FA79B822B2736F00B5D6BE /* kadmlia.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798B22B2736F00B5D6BE /* kadmlia.pb.cc */; };
+		99FA79B922B2736F00B5D6BE /* ledger.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798C22B2736F00B5D6BE /* ledger.pb.cc */; };
+		99FA79BA22B2736F00B5D6BE /* local_node_info.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798D22B2736F00B5D6BE /* local_node_info.cc */; };
+		99FA79BB22B2736F00B5D6BE /* nat_handshake_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798E22B2736F00B5D6BE /* nat_handshake_manager.cc */; };
+		99FA79BC22B2736F00B5D6BE /* nat_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA798F22B2736F00B5D6BE /* nat_manager.cc */; };
+		99FA79BD22B2736F00B5D6BE /* node_detection_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799022B2736F00B5D6BE /* node_detection_manager.cc */; };
+		99FA79BE22B2736F00B5D6BE /* nodeid_utils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799122B2736F00B5D6BE /* nodeid_utils.cc */; };
+		99FA79BF22B2736F00B5D6BE /* routing_table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799222B2736F00B5D6BE /* routing_table.cc */; };
+		99FA79C022B2736F00B5D6BE /* routing_utils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799322B2736F00B5D6BE /* routing_utils.cc */; };
+		99FA79C122B2736F00B5D6BE /* rumor_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799422B2736F00B5D6BE /* rumor_filter.cc */; };
+		99FA79C222B2736F00B5D6BE /* rumor_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799522B2736F00B5D6BE /* rumor_handler.cc */; };
+		99FA79C322B2736F00B5D6BE /* rumor_message_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 99FA799622B2736F00B5D6BE /* rumor_message_manager.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		99FA78AB22B2720A00B5D6BE /* libxkad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxkad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FA796322B2736F00B5D6BE /* rumor_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rumor_def.h; sourceTree = "<group>"; };
+		99FA796422B2736F00B5D6BE /* rumor_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rumor_filter.h; sourceTree = "<group>"; };
+		99FA796522B2736F00B5D6BE /* rumor_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rumor_handler.h; sourceTree = "<group>"; };
+		99FA796622B2736F00B5D6BE /* rumor_message_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rumor_message_manager.h; sourceTree = "<group>"; };
+		99FA796822B2736F00B5D6BE /* nat_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat_defines.h; sourceTree = "<group>"; };
+		99FA796A22B2736F00B5D6BE /* nat_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat_defines.h; sourceTree = "<group>"; };
+		99FA796B22B2736F00B5D6BE /* nat_handshake_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat_handshake_manager.h; sourceTree = "<group>"; };
+		99FA796C22B2736F00B5D6BE /* nat_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat_log.h; sourceTree = "<group>"; };
+		99FA796D22B2736F00B5D6BE /* nat_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat_manager.h; sourceTree = "<group>"; };
+		99FA796F22B2736F00B5D6BE /* kadmlia.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kadmlia.pb.h; sourceTree = "<group>"; };
+		99FA797022B2736F00B5D6BE /* kadmlia.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kadmlia.proto; sourceTree = "<group>"; };
+		99FA797122B2736F00B5D6BE /* ledger.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ledger.pb.h; sourceTree = "<group>"; };
+		99FA797222B2736F00B5D6BE /* ledger.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ledger.proto; sourceTree = "<group>"; };
+		99FA797422B2736F00B5D6BE /* bootstrap_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootstrap_cache.h; sourceTree = "<group>"; };
+		99FA797522B2736F00B5D6BE /* bootstrap_cache_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootstrap_cache_helper.h; sourceTree = "<group>"; };
+		99FA797622B2736F00B5D6BE /* callback_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callback_manager.h; sourceTree = "<group>"; };
+		99FA797722B2736F00B5D6BE /* client_node_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_node_manager.h; sourceTree = "<group>"; };
+		99FA797822B2736F00B5D6BE /* dynamic_xip_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynamic_xip_manager.h; sourceTree = "<group>"; };
+		99FA797922B2736F00B5D6BE /* heartbeat_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heartbeat_state.h; sourceTree = "<group>"; };
+		99FA797A22B2736F00B5D6BE /* kad_message_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kad_message_handler.h; sourceTree = "<group>"; };
+		99FA797B22B2736F00B5D6BE /* local_node_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = local_node_info.h; sourceTree = "<group>"; };
+		99FA797C22B2736F00B5D6BE /* nat_detect_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nat_detect_manager.h; sourceTree = "<group>"; };
+		99FA797D22B2736F00B5D6BE /* node_detection_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node_detection_manager.h; sourceTree = "<group>"; };
+		99FA797E22B2736F00B5D6BE /* node_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node_info.h; sourceTree = "<group>"; };
+		99FA797F22B2736F00B5D6BE /* nodeid_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nodeid_utils.h; sourceTree = "<group>"; };
+		99FA798022B2736F00B5D6BE /* routing_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = routing_table.h; sourceTree = "<group>"; };
+		99FA798122B2736F00B5D6BE /* routing_table_heartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = routing_table_heartbeat.h; sourceTree = "<group>"; };
+		99FA798222B2736F00B5D6BE /* routing_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = routing_utils.h; sourceTree = "<group>"; };
+		99FA798422B2736F00B5D6BE /* bootstrap_cache.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootstrap_cache.cc; sourceTree = "<group>"; };
+		99FA798522B2736F00B5D6BE /* bootstrap_cache_helper.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bootstrap_cache_helper.cc; sourceTree = "<group>"; };
+		99FA798622B2736F00B5D6BE /* callback_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = callback_manager.cc; sourceTree = "<group>"; };
+		99FA798722B2736F00B5D6BE /* client_node_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = client_node_manager.cc; sourceTree = "<group>"; };
+		99FA798822B2736F00B5D6BE /* dynamic_xip_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dynamic_xip_manager.cc; sourceTree = "<group>"; };
+		99FA798922B2736F00B5D6BE /* heartbeat_state.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = heartbeat_state.cc; sourceTree = "<group>"; };
+		99FA798A22B2736F00B5D6BE /* kad_message_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kad_message_handler.cc; sourceTree = "<group>"; };
+		99FA798B22B2736F00B5D6BE /* kadmlia.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kadmlia.pb.cc; sourceTree = "<group>"; };
+		99FA798C22B2736F00B5D6BE /* ledger.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ledger.pb.cc; sourceTree = "<group>"; };
+		99FA798D22B2736F00B5D6BE /* local_node_info.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = local_node_info.cc; sourceTree = "<group>"; };
+		99FA798E22B2736F00B5D6BE /* nat_handshake_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nat_handshake_manager.cc; sourceTree = "<group>"; };
+		99FA798F22B2736F00B5D6BE /* nat_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nat_manager.cc; sourceTree = "<group>"; };
+		99FA799022B2736F00B5D6BE /* node_detection_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = node_detection_manager.cc; sourceTree = "<group>"; };
+		99FA799122B2736F00B5D6BE /* nodeid_utils.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nodeid_utils.cc; sourceTree = "<group>"; };
+		99FA799222B2736F00B5D6BE /* routing_table.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = routing_table.cc; sourceTree = "<group>"; };
+		99FA799322B2736F00B5D6BE /* routing_utils.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = routing_utils.cc; sourceTree = "<group>"; };
+		99FA799422B2736F00B5D6BE /* rumor_filter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rumor_filter.cc; sourceTree = "<group>"; };
+		99FA799522B2736F00B5D6BE /* rumor_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rumor_handler.cc; sourceTree = "<group>"; };
+		99FA799622B2736F00B5D6BE /* rumor_message_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rumor_message_manager.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99FA78A822B2720A00B5D6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99FA78A222B2720A00B5D6BE = {
+			isa = PBXGroup;
+			children = (
+				99FA796122B2736000B5D6BE /* source */,
+				99FA78AC22B2720A00B5D6BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99FA78AC22B2720A00B5D6BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99FA78AB22B2720A00B5D6BE /* libxkad.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99FA796122B2736000B5D6BE /* source */ = {
+			isa = PBXGroup;
+			children = (
+				99FA796222B2736F00B5D6BE /* gossip */,
+				99FA796722B2736F00B5D6BE /* nat_detect */,
+				99FA796E22B2736F00B5D6BE /* proto */,
+				99FA797322B2736F00B5D6BE /* routing_table */,
+				99FA798322B2736F00B5D6BE /* src */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		99FA796222B2736F00B5D6BE /* gossip */ = {
+			isa = PBXGroup;
+			children = (
+				99FA796322B2736F00B5D6BE /* rumor_def.h */,
+				99FA796422B2736F00B5D6BE /* rumor_filter.h */,
+				99FA796522B2736F00B5D6BE /* rumor_handler.h */,
+				99FA796622B2736F00B5D6BE /* rumor_message_manager.h */,
+			);
+			path = gossip;
+			sourceTree = "<group>";
+		};
+		99FA796722B2736F00B5D6BE /* nat_detect */ = {
+			isa = PBXGroup;
+			children = (
+				99FA796822B2736F00B5D6BE /* nat_defines.h */,
+				99FA796922B2736F00B5D6BE /* nat_detect */,
+				99FA796B22B2736F00B5D6BE /* nat_handshake_manager.h */,
+				99FA796C22B2736F00B5D6BE /* nat_log.h */,
+				99FA796D22B2736F00B5D6BE /* nat_manager.h */,
+			);
+			path = nat_detect;
+			sourceTree = "<group>";
+		};
+		99FA796922B2736F00B5D6BE /* nat_detect */ = {
+			isa = PBXGroup;
+			children = (
+				99FA796A22B2736F00B5D6BE /* nat_defines.h */,
+			);
+			path = nat_detect;
+			sourceTree = "<group>";
+		};
+		99FA796E22B2736F00B5D6BE /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				99FA796F22B2736F00B5D6BE /* kadmlia.pb.h */,
+				99FA797022B2736F00B5D6BE /* kadmlia.proto */,
+				99FA797122B2736F00B5D6BE /* ledger.pb.h */,
+				99FA797222B2736F00B5D6BE /* ledger.proto */,
+			);
+			path = proto;
+			sourceTree = "<group>";
+		};
+		99FA797322B2736F00B5D6BE /* routing_table */ = {
+			isa = PBXGroup;
+			children = (
+				99FA797422B2736F00B5D6BE /* bootstrap_cache.h */,
+				99FA797522B2736F00B5D6BE /* bootstrap_cache_helper.h */,
+				99FA797622B2736F00B5D6BE /* callback_manager.h */,
+				99FA797722B2736F00B5D6BE /* client_node_manager.h */,
+				99FA797822B2736F00B5D6BE /* dynamic_xip_manager.h */,
+				99FA797922B2736F00B5D6BE /* heartbeat_state.h */,
+				99FA797A22B2736F00B5D6BE /* kad_message_handler.h */,
+				99FA797B22B2736F00B5D6BE /* local_node_info.h */,
+				99FA797C22B2736F00B5D6BE /* nat_detect_manager.h */,
+				99FA797D22B2736F00B5D6BE /* node_detection_manager.h */,
+				99FA797E22B2736F00B5D6BE /* node_info.h */,
+				99FA797F22B2736F00B5D6BE /* nodeid_utils.h */,
+				99FA798022B2736F00B5D6BE /* routing_table.h */,
+				99FA798122B2736F00B5D6BE /* routing_table_heartbeat.h */,
+				99FA798222B2736F00B5D6BE /* routing_utils.h */,
+			);
+			path = routing_table;
+			sourceTree = "<group>";
+		};
+		99FA798322B2736F00B5D6BE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				99FA798422B2736F00B5D6BE /* bootstrap_cache.cc */,
+				99FA798522B2736F00B5D6BE /* bootstrap_cache_helper.cc */,
+				99FA798622B2736F00B5D6BE /* callback_manager.cc */,
+				99FA798722B2736F00B5D6BE /* client_node_manager.cc */,
+				99FA798822B2736F00B5D6BE /* dynamic_xip_manager.cc */,
+				99FA798922B2736F00B5D6BE /* heartbeat_state.cc */,
+				99FA798A22B2736F00B5D6BE /* kad_message_handler.cc */,
+				99FA798B22B2736F00B5D6BE /* kadmlia.pb.cc */,
+				99FA798C22B2736F00B5D6BE /* ledger.pb.cc */,
+				99FA798D22B2736F00B5D6BE /* local_node_info.cc */,
+				99FA798E22B2736F00B5D6BE /* nat_handshake_manager.cc */,
+				99FA798F22B2736F00B5D6BE /* nat_manager.cc */,
+				99FA799022B2736F00B5D6BE /* node_detection_manager.cc */,
+				99FA799122B2736F00B5D6BE /* nodeid_utils.cc */,
+				99FA799222B2736F00B5D6BE /* routing_table.cc */,
+				99FA799322B2736F00B5D6BE /* routing_utils.cc */,
+				99FA799422B2736F00B5D6BE /* rumor_filter.cc */,
+				99FA799522B2736F00B5D6BE /* rumor_handler.cc */,
+				99FA799622B2736F00B5D6BE /* rumor_message_manager.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		99FA78A922B2720A00B5D6BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FA79AB22B2736F00B5D6BE /* node_detection_manager.h in Headers */,
+				99FA799B22B2736F00B5D6BE /* nat_defines.h in Headers */,
+				99FA799A22B2736F00B5D6BE /* rumor_message_manager.h in Headers */,
+				99FA799922B2736F00B5D6BE /* rumor_handler.h in Headers */,
+				99FA79AC22B2736F00B5D6BE /* node_info.h in Headers */,
+				99FA79AA22B2736F00B5D6BE /* nat_detect_manager.h in Headers */,
+				99FA799E22B2736F00B5D6BE /* nat_log.h in Headers */,
+				99FA799F22B2736F00B5D6BE /* nat_manager.h in Headers */,
+				99FA79A722B2736F00B5D6BE /* heartbeat_state.h in Headers */,
+				99FA79A522B2736F00B5D6BE /* client_node_manager.h in Headers */,
+				99FA79A122B2736F00B5D6BE /* ledger.pb.h in Headers */,
+				99FA79A322B2736F00B5D6BE /* bootstrap_cache_helper.h in Headers */,
+				99FA79AE22B2736F00B5D6BE /* routing_table.h in Headers */,
+				99FA799C22B2736F00B5D6BE /* nat_defines.h in Headers */,
+				99FA79A822B2736F00B5D6BE /* kad_message_handler.h in Headers */,
+				99FA79AF22B2736F00B5D6BE /* routing_table_heartbeat.h in Headers */,
+				99FA79A922B2736F00B5D6BE /* local_node_info.h in Headers */,
+				99FA799822B2736F00B5D6BE /* rumor_filter.h in Headers */,
+				99FA79A622B2736F00B5D6BE /* dynamic_xip_manager.h in Headers */,
+				99FA79B022B2736F00B5D6BE /* routing_utils.h in Headers */,
+				99FA79A222B2736F00B5D6BE /* bootstrap_cache.h in Headers */,
+				99FA799D22B2736F00B5D6BE /* nat_handshake_manager.h in Headers */,
+				99FA79AD22B2736F00B5D6BE /* nodeid_utils.h in Headers */,
+				99FA799722B2736F00B5D6BE /* rumor_def.h in Headers */,
+				99FA79A022B2736F00B5D6BE /* kadmlia.pb.h in Headers */,
+				99FA79A422B2736F00B5D6BE /* callback_manager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99FA78AA22B2720A00B5D6BE /* xkad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA78AF22B2720A00B5D6BE /* Build configuration list for PBXNativeTarget "xkad" */;
+			buildPhases = (
+				99FA78A722B2720A00B5D6BE /* Sources */,
+				99FA78A822B2720A00B5D6BE /* Frameworks */,
+				99FA78A922B2720A00B5D6BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xkad;
+			productName = xkad;
+			productReference = 99FA78AB22B2720A00B5D6BE /* libxkad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99FA78A322B2720A00B5D6BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Taylor Wei";
+				TargetAttributes = {
+					99FA78AA22B2720A00B5D6BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 99FA78A622B2720A00B5D6BE /* Build configuration list for PBXProject "xkad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99FA78A222B2720A00B5D6BE;
+			productRefGroup = 99FA78AC22B2720A00B5D6BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99FA78AA22B2720A00B5D6BE /* xkad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99FA78A722B2720A00B5D6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FA79C222B2736F00B5D6BE /* rumor_handler.cc in Sources */,
+				99FA79B922B2736F00B5D6BE /* ledger.pb.cc in Sources */,
+				99FA79B622B2736F00B5D6BE /* heartbeat_state.cc in Sources */,
+				99FA79BE22B2736F00B5D6BE /* nodeid_utils.cc in Sources */,
+				99FA79B422B2736F00B5D6BE /* client_node_manager.cc in Sources */,
+				99FA79B122B2736F00B5D6BE /* bootstrap_cache.cc in Sources */,
+				99FA79C322B2736F00B5D6BE /* rumor_message_manager.cc in Sources */,
+				99FA79B322B2736F00B5D6BE /* callback_manager.cc in Sources */,
+				99FA79BB22B2736F00B5D6BE /* nat_handshake_manager.cc in Sources */,
+				99FA79BF22B2736F00B5D6BE /* routing_table.cc in Sources */,
+				99FA79BA22B2736F00B5D6BE /* local_node_info.cc in Sources */,
+				99FA79C122B2736F00B5D6BE /* rumor_filter.cc in Sources */,
+				99FA79BC22B2736F00B5D6BE /* nat_manager.cc in Sources */,
+				99FA79B822B2736F00B5D6BE /* kadmlia.pb.cc in Sources */,
+				99FA79B722B2736F00B5D6BE /* kad_message_handler.cc in Sources */,
+				99FA79C022B2736F00B5D6BE /* routing_utils.cc in Sources */,
+				99FA79B222B2736F00B5D6BE /* bootstrap_cache_helper.cc in Sources */,
+				99FA79B522B2736F00B5D6BE /* dynamic_xip_manager.cc in Sources */,
+				99FA79BD22B2736F00B5D6BE /* node_detection_manager.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		99FA78AD22B2720A00B5D6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../xdepends/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DBUILD_USER_LIB";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../ ../xdepends/include ../third_party";
+			};
+			name = Debug;
+		};
+		99FA78AE22B2720A00B5D6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../xdepends/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DBUILD_USER_LIB";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../ ../xdepends/include ../third_party";
+			};
+			name = Release;
+		};
+		99FA78B022B2720A00B5D6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99FA78B122B2720A00B5D6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99FA78A622B2720A00B5D6BE /* Build configuration list for PBXProject "xkad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA78AD22B2720A00B5D6BE /* Debug */,
+				99FA78AE22B2720A00B5D6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA78AF22B2720A00B5D6BE /* Build configuration list for PBXNativeTarget "xkad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA78B022B2720A00B5D6BE /* Debug */,
+				99FA78B122B2720A00B5D6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99FA78A322B2720A00B5D6BE /* Project object */;
+}

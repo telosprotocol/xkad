@@ -1,0 +1,220 @@
+syntax = "proto2";
+
+package top.kadmlia.protobuf;
+
+message TestMultiRelayRequest {
+    optional bytes ping = 1;
+}
+
+message TestMultiRelayResponse {
+    optional bytes pong = 1;
+}
+
+message ConnectReq {
+    optional bytes local_ip = 1;
+    optional int32 local_port = 2;
+    optional bytes public_ip = 3;
+    optional int32 public_port = 4;
+    optional int32 nat_type = 5;
+    optional bytes relay_routing_id = 6;
+}
+
+message ConnectRes {
+    optional bytes public_ip = 1;
+    optional int32 public_port = 2;
+    optional bytes local_ip = 3;
+    optional int32 local_port = 4;
+    optional int32 nat_type = 5;
+}
+
+message BootstrapJoinRequest {
+    optional bytes local_ip = 1;
+    optional int32 local_port = 2;
+    optional bool  client_mode = 3; 
+    optional int32 nat_type = 4;
+    optional bytes xid = 5;
+    optional bytes xip = 6;
+}
+
+message BootstrapJoinResponse {
+    optional bytes public_ip = 1;
+    optional int32 public_port = 2;
+    optional bytes bootstrap_id = 3;
+    optional int32 nat_type = 4;
+    optional bytes xid = 5;
+    // bootstrap node self xip
+    optional bytes xip = 6;
+    // bootsrap node dispatch dynamic xip for "client" node
+    optional bytes dxip = 7;
+}
+
+message NatDetectRequest {
+    optional bytes local_ip = 1;
+    optional int32 local_port = 2;
+}
+
+message NatDetectResponse {
+    optional int32 nat_type = 1;
+    optional int32 detect_port = 2; // node -> boot.detect_port
+}
+
+message NatDetectFinish {  // to boot for stop detection!
+    optional int32 resv = 1;
+}
+
+message NatDetectHandshake2Node {
+    optional int32 resv = 1;
+}
+
+message NatDetectHandshake2Boot {
+    optional int32 resv = 1;
+}
+
+message Handshake {
+    optional bytes local_ip = 1;
+    optional int32 local_port = 2;
+    optional int32 type = 3;
+    optional bytes public_ip = 4;
+    optional int32 public_port = 5;
+    optional int32 nat_type = 6;
+    optional bytes xid = 7;
+    optional bytes xip = 8;
+}
+
+message NodeInfo {
+    optional bytes public_ip = 1;
+    optional int32 public_port = 2;
+    optional bytes local_ip = 3;
+    optional int32 local_port = 4;
+    optional bytes id = 5;
+    optional int32 nat_type = 6;
+    optional bytes xip = 7;
+    optional bytes xid = 8;
+}
+
+message Heartbeat {
+    map<string, string> extinfo_map = 1;
+}
+
+message FindClosestNodesRequest {
+    optional uint32 count = 1;
+    optional bytes target_id = 2;
+    repeated uint64 bloomfilter = 3;
+    optional NodeInfo src_nodeinfo = 4;
+}
+
+message FindClosestNodesResponse {
+    repeated NodeInfo nodes = 1;
+}
+
+message GetNearestNodesRequest {
+    optional bytes target_id = 1;
+    optional uint32 count = 2;
+}
+
+message GetNearestNodesResponse {
+    repeated NodeInfo nodes = 1;
+}
+
+message UdpNatDetectRequest {
+    optional uint32 resv = 1;
+}
+
+message UdpNatDetectResponse {
+    optional bytes public_ip = 1;
+    optional int32 public_port = 2;
+}
+
+message EdgeNodesRequest {
+    optional bytes target_id = 1;
+    optional uint32 count = 2;
+}
+
+message EdgeNodesResponse {
+    repeated NodeInfo nodes = 1;
+}
+
+message AddressInfo {
+    optional bytes     public_ip       =  1;
+    optional uint32    public_port     =  2;
+    optional uint32    local_port     =  3;
+    optional bytes     detect_local_ip = 4;
+    optional uint32    detect_local_port = 5;
+}
+
+message EdgeInfoRequest {
+    map<uint32,AddressInfo> client_info   = 1; 
+    optional int32 nat_type = 2;
+}
+
+message EdgeInfoResponse {
+    map<uint32,AddressInfo> edge_info   = 1; 
+    optional int32 nat_type = 2;
+}
+
+message GetAllNodesFromBootRequest {
+    optional int32 start_pos = 1;
+    optional int32 len = 2;
+}
+
+message GetAllNodesFromBootResponse {
+    repeated NodeInfo nodes = 1;
+}
+//used for data transfer
+message SmartObjectData {
+    optional uint32 type = 1;
+    optional uint32 oper = 2;
+    optional bytes key = 3;
+    optional bytes value = 4;
+    optional bytes field = 5;
+    repeated bytes list_value = 6;
+    optional uint32 ttl = 7;
+    optional bytes public_key = 8;
+    optional bytes aes_key = 9;
+    optional uint32 encrypt_mode = 10;
+}
+//used for data refresh
+message SmartObjectTuple {
+    optional uint32 type = 1;
+    optional bytes key = 2;
+    optional bytes value = 3;
+    optional bytes field = 4;
+    repeated bytes list_value = 5;
+    optional uint64 save_time = 6;
+    optional uint32 ttl = 7;
+}
+//used for data refresh
+message SmartObjectRefreshData {
+    optional uint32 oper = 1;
+    repeated SmartObjectTuple list_tuple = 2;
+}
+//used for each data block
+message SmartObjectDataBlock {
+    optional uint32 id = 1;
+    optional bytes block_hash = 2;
+    optional bytes data = 3;
+}
+//used for sync data
+message SmartObjectSyncData {
+    optional uint32 type = 1;
+    optional bytes key = 2;
+    optional bytes version = 3;
+    optional bytes root_hash = 4;
+    optional bytes sync_node = 5;
+    repeated SmartObjectDataBlock list_block = 6;
+}
+
+message RootGetNodesRequest {
+    optional bytes id = 1;
+	optional uint32 count = 2;
+}
+
+message RootGetNodesResponse {
+    repeated NodeInfo nodes = 1;
+}
+
+message RootMessage {
+    optional uint32 message_type = 1;
+    optional bytes data = 2;
+}
+

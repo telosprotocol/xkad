@@ -1,0 +1,11 @@
+syntax = "proto3";
+package top.kadmlia.pb;
+
+message PbBootstrapEndpoint {
+    string ip = 1;
+    uint32 port = 2;
+}
+
+message PbBootstrapCache {
+    repeated PbBootstrapEndpoint endpoints = 1;
+}
