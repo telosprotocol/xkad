@@ -1,4 +1,4 @@
-# xkad(a c++ core engine of TOP)
+# xkad(a high performance X-DHT)
 
 >A High Performance Distributed Hash Table implementation of TOP Network.
 
